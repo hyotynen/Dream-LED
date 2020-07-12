@@ -12,12 +12,6 @@ Hardware
 
 [Wemos D1 Mini & Headers](https://www.aliexpress.com/store/product/D1-mini-Mini-NodeMcu-4M-bytes-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266/1331105_32529101036.html)
 
-or
-
-[![Adafruit HUZZAH ESP8266 Breakout](https://cdn-shop.adafruit.com/310x233/2471-10.jpg)](https://www.adafruit.com/products/2471)
-
-[Adafruit HUZZAH ESP8266 Breakout](https://www.adafruit.com/products/2471)
-
 ##### Addressable LED strip
 
 [![Adafruit NeoPixel Ring](https://www.adafruit.com/images/145x109/1586-00.jpg)](https://www.adafruit.com/product/1586)
@@ -26,17 +20,9 @@ or
 
 Other hardware:
 
-* [3.3V to 5V Logic Level Shifter](http://www.digikey.com/product-detail/en/texas-instruments/SN74HCT245N/296-1612-5-ND/277258) (required if LEDs "glitch")
-
 Recommended by [Adafruit NeoPixel "Best Practices"](https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices) to help protect LEDs from current onrush:
 * [1000µF Capacitor](http://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-1EM102/P5156-ND/245015)
 * [300 to 500 Ohm resistor](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF14JT470R/CF14JT470RCT-ND/1830342)
-
-Optional shield to make everything more tidy:
-
-[![Wemos D1 Mini ESP8266 LED & Level Shifter Shield](https://d3s5r33r268y59.cloudfront.net/13194/products/thumbs/2017-05-06T15:02:37.208Z-IMG_20170506_100623.jpg.114x76_q85_pad_rcrop.jpg)](https://www.tindie.com/products/jasoncoon/wemos-d1-mini-esp8266-led-and-level-shifter-shield/)
-
-[Wemos D1 Mini ESP8266 LED & Level Shifter Shield](https://www.tindie.com/products/jasoncoon/wemos-d1-mini-esp8266-led-and-level-shifter-shield)
 
 Features
 --------
@@ -47,6 +33,16 @@ Features
 * Change the color palette manually or randomly after selected period
 * Layered effects: Glitter & Strobe
 * Sound reactive color patterns (possibility to use without microphone using generated signal)
+
+Changes to original repo
+-------------------------
+* User interface cleaned from all the excess
+* Code cleaned
+* All the patterns now use color pattern
+* Microphone support & sound reactive patterns added
+* All but sound reactive patterns now react to speed change
+* A lot of new color patterns and palettes added
+* User interface translated to finnish
 
 Web App
 --------
