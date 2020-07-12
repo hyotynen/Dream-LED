@@ -8,8 +8,7 @@ Hardware
 
 ##### ESP8266 development board
 
-<img src="https://docs.wemos.cc/en/latest/_images/d1_mini_v3.1.0_1_16x16.jpg" width="300px">
-[Wemos D1 Mini](https://docs.wemos.cc/en/latest/d1/d1_mini.html)
+<a href="https://hyotynen.iki.fi/"><img src="https://docs.wemos.cc/en/latest/_images/d1_mini_v3.1.0_1_16x16.jpg" width="300px"></a>
 
 ##### Addressable LED strip
 
@@ -19,7 +18,7 @@ Other hardware:
 
 ##### Microphone module
 
-[![Adafruit NeoPixel LED Strip](https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/s/o/sound-sensor-1.jpg)](https://www.waveshare.com/sound-sensor.htm)
+[![Microphone module](https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/s/o/sound-sensor-1.jpg)](https://www.waveshare.com/sound-sensor.htm)
 
 Recommended by [Adafruit NeoPixel "Best Practices"](https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices) to help protect LEDs from current onrush:
 * [1000µF Capacitor](http://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-1EM102/P5156-ND/245015)
