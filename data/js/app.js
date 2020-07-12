@@ -24,10 +24,10 @@ ws.onmessage = function(evt) {
 }
 
 $(document).ready(function() {
-  $("#status").html("Connecting, please wait...");
+  $("#status").html("Yhdistetään, odota...");
 
   $.get(urlBase + "all", function(data) {
-      $("#status").html("Loading, please wait...");
+      $("#status").html("Ladataan, odota...");
 
       $.each(data, function(index, field) {
         if (field.type == "Number") {
@@ -52,10 +52,10 @@ $(document).ready(function() {
         inline: true
       });
 
-      $("#status").html("Ready");
+      $("#status").html("Valmis");
     })
     .fail(function(errorThrown) {
-      console.log("error: " + errorThrown);
+      console.log("virhe: " + errorThrown);
     });
 });
 
@@ -403,15 +403,15 @@ function setBooleanFieldValue(field, btnOn, btnOff, value) {
 }
 
 function postValue(name, value) {
-  $("#status").html("Setting " + name + ": " + value + ", please wait...");
+  $("#status").html("Asetetaan " + name + ": " + value + ", odota...");
 
   var body = { name: name, value: value };
 
   $.post(urlBase + name + "?value=" + value, body, function(data) {
     if (data.name != null) {
-      $("#status").html("Set " + name + ": " + data.name);
+      $("#status").html("Aseta " + name + ": " + data.name);
     } else {
-      $("#status").html("Set " + name + ": " + data);
+      $("#status").html("Aseta " + name + ": " + data);
     }
   });
 }
@@ -424,12 +424,12 @@ function delayPostValue(name, value) {
 }
 
 function postColor(name, value) {
-  $("#status").html("Setting " + name + ": " + value.r + "," + value.g + "," + value.b + ", please wait...");
+  $("#status").html("Asetetaan " + name + ": " + value.r + "," + value.g + "," + value.b + ", odota...");
 
   var body = { name: name, r: value.r, g: value.g, b: value.b };
 
   $.post(urlBase + name + "?r=" + value.r + "&g=" + value.g + "&b=" + value.b, body, function(data) {
-    $("#status").html("Set " + name + ": " + data);
+    $("#status").html("Aseta " + name + ": " + data);
   })
   .fail(function(textStatus, errorThrown) { $("#status").html("Fail: " + textStatus + " " + errorThrown); });
 }
