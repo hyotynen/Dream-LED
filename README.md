@@ -1,7 +1,7 @@
 FastLED + ESP8266 Web Server
 =========
 
-Control an addressable LED strip with an ESP8266 via a web browser or infrared remote control.
+Control an addressable LED strip with an ESP8266 via a web browser or microphone.
 
 Hardware
 --------
@@ -50,8 +50,6 @@ Web App
 
 ![Web App](webapp.png)
 
-Patterns are requested by the app from the ESP8266, so as new patterns are added, they're automatically listed in the app.
-
 The web app is stored in SPIFFS (on-board flash memory).
 
 The web app is a single page app that uses [jQuery](https://jquery.com) and [Bootstrap](http://getbootstrap.com).  It has buttons for On/Off, a slider for brightness, a pattern selector, and a color picker (using [jQuery MiniColors](http://labs.abeautifulsite.net/jquery-minicolors)).  Event handlers for the controls are wired up, so you don't have to click a 'Send' button after making changes.  The brightness slider and the color picker use a delayed event handler, to prevent from flooding the ESP8266 web server with too many requests too quickly.
@@ -91,11 +89,6 @@ REST Web services
 -----------------
 
 The firmware implements basic [RESTful web services](https://en.wikipedia.org/wiki/Representational_state_transfer) using the ESP8266WebServer library.  Current values are requested with HTTP GETs, and values are set with POSTs using query string parameters.  It can run in connected or standalone access point modes.
-
-Infrared Remote Control
------------------------
-
-Control via infrared remote control is also supported, via the [ESP8266 port of the IRremote library](https://github.com/sebastienwarin/IRremoteESP8266).
 
 [Adafruit NeoPixel Ring]:https://www.adafruit.com/product/1586
 [Adafruit HUZZAH ESP8266 Breakout]:https://www.adafruit.com/products/2471
