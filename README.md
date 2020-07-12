@@ -13,7 +13,7 @@ Hardware
 
 ##### Addressable LED strip
 
-[![Adafruit NeoPixel Ring](https://www.adafruit.com/images/145x109/1586-00.jpg)](https://www.adafruit.com/product/1586)
+[![Adafruit NeoPixel LED Strip](https://cdn-shop.adafruit.com/1200x900/1138-00.jpg)](https://www.adafruit.com/product/1138)
 
 Other hardware:
 
