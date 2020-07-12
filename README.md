@@ -8,8 +8,7 @@ Hardware
 
 ##### ESP8266 development board
 
-[![Wemos D1 Mini Pro & Headers](https://docs.wemos.cc/en/latest/_images/d1_mini_v3.1.0_1_16x16.jpg | width=300)](https://docs.wemos.cc/en/latest/d1/d1_mini.html)
-
+<img src="https://docs.wemos.cc/en/latest/_images/d1_mini_v3.1.0_1_16x16.jpg" width="300px">
 [Wemos D1 Mini](https://docs.wemos.cc/en/latest/d1/d1_mini.html)
 
 ##### Addressable LED strip
