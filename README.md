@@ -40,21 +40,20 @@ Optional shield to make everything more tidy:
 
 Features
 --------
-* Turn the NeoPixel Ring on and off
+* Turn the LED-strip on and off
 * Adjust the brightness
-* Change the display pattern
-* Adjust the color
+* Adjust the speed
+* Change the color pattern manually or randomly after selected period
+* Change the color palette manually or randomly after selected period
+* Layered effects: Glitter & Strobe
+* Sound reactive color patterns (possibility to use without microphone using generated signal)
 
 Web App
 --------
 
-![Web App](webapp.png)
-
 The web app is stored in SPIFFS (on-board flash memory).
 
 The web app is a single page app that uses [jQuery](https://jquery.com) and [Bootstrap](http://getbootstrap.com).  It has buttons for On/Off, a slider for brightness, a pattern selector, and a color picker (using [jQuery MiniColors](http://labs.abeautifulsite.net/jquery-minicolors)).  Event handlers for the controls are wired up, so you don't have to click a 'Send' button after making changes.  The brightness slider and the color picker use a delayed event handler, to prevent from flooding the ESP8266 web server with too many requests too quickly.
-
-The only drawback to SPIFFS that I've found so far is uploading the files can be extremely slow, requiring several minutes, sometimes regardless of how large the files are.  It can be so slow that I've been just developing the web app and debugging locally on my desktop (with a hard-coded IP for the ESP8266), before uploading to SPIFFS and testing on the ESP8266.
 
 Installing
 -----------
@@ -63,7 +62,6 @@ The app is installed via the Arduino IDE which can be [downloaded here](https://
 The app depends on the following libraries. They must either be downloaded from GitHub and placed in the Arduino 'libraries' folder, or installed as [described here](https://www.arduino.cc/en/Guide/Libraries) by using the Arduino library manager.
 
 * [FastLED](https://github.com/FastLED/FastLED)
-* [IRremoteESP8266](https://github.com/sebastienwarin/IRremoteESP8266)
 * [Arduino WebSockets](https://github.com/Links2004/arduinoWebSockets)
 
 Download the app code from GitHub using the green Clone or Download button from [the GitHub project main page](https://github.com/jasoncoon/esp8266-fastled-webserver) and click Download ZIP. Decompress the ZIP file in your Arduino sketch folder.
@@ -72,7 +70,7 @@ The web app needs to be uploaded to the ESP8266's SPIFFS.  You can do this withi
 
 With ESP8266FS installed upload the web app using `ESP8266 Sketch Data Upload` command in the Arduino Tools menu.
 
-Then enter your wi-fi network SSID and password in the WiFi.h file, and upload the sketch using the Upload button.
+Then enter your wi-fi network SSID and password in the Secrets.h file, and upload the sketch using the Upload button.
 
 Compression
 -----------
@@ -89,6 +87,3 @@ REST Web services
 -----------------
 
 The firmware implements basic [RESTful web services](https://en.wikipedia.org/wiki/Representational_state_transfer) using the ESP8266WebServer library.  Current values are requested with HTTP GETs, and values are set with POSTs using query string parameters.  It can run in connected or standalone access point modes.
-
-[Adafruit NeoPixel Ring]:https://www.adafruit.com/product/1586
-[Adafruit HUZZAH ESP8266 Breakout]:https://www.adafruit.com/products/2471
