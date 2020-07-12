@@ -5,16 +5,15 @@ Control an addressable LED strip with an ESP8266 via a web browser or a micropho
 
 Hardware
 --------
-
 ##### ESP8266 development board
 
 <a href="https://docs.wemos.cc/en/latest/d1/d1_mini.html"><img src="https://docs.wemos.cc/en/latest/_images/d1_mini_v3.1.0_1_16x16.jpg" width="300px"></a>
+
 
 ##### Addressable LED strip
 
 <a href="https://www.adafruit.com/product/1138"><img src="https://cdn-shop.adafruit.com/1200x900/1138-00.jpg" width="300px"></a>
 
-Other hardware:
 
 ##### Microphone module
 
