@@ -33,6 +33,7 @@ Features
 * Change the color palette manually or randomly after selected period
 * Layered effects: Glitter & Strobe
 * Sound reactive color patterns (possibility to use without microphone using generated signal)
+* Single solid color option
 
 Changes to original repo
 -------------------------
