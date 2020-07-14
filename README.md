@@ -2,6 +2,7 @@ FastLED + ESP8266 Web Server
 =========
 
 Control an addressable LED strip with an ESP8266 via a web browser or a microphone.
+![Dream LED](https://raw.githubusercontent.com/hyotynen/Dream-LED/main/3D-model/Dream-LED.png?raw=true "Dream LED")
 
 Hardware
 --------
