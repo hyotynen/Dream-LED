@@ -15,7 +15,7 @@ Hardware
 <a href="https://www.adafruit.com/product/1138"><img src="https://cdn-shop.adafruit.com/1200x900/1138-00.jpg" width="300px"></a>
 
 
-##### Microphone module
+##### Microphone module (optional)
 
 <a href="https://www.waveshare.com/sound-sensor.htm"><img src="https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/s/o/sound-sensor-1.jpg" width="300px"></a>
 
