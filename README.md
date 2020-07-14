@@ -4,6 +4,17 @@ FastLED + ESP8266 Web Server
 Control an addressable LED strip with an ESP8266 via a web browser or a microphone.
 ![Dream LED](https://raw.githubusercontent.com/hyotynen/Dream-LED/main/3D-model/Dream-LED.png?raw=true "Dream LED")
 
+Features
+--------
+* Turn the LED-strip on and off
+* Adjust the brightness
+* Adjust the speed
+* Change the color pattern manually or randomly after selected period
+* Change the color palette manually or randomly after selected period
+* Layered effects: Glitter & Strobe
+* Sound reactive color patterns (possibility to use without microphone using generated signal)
+* Single solid color option
+
 Hardware
 --------
 ##### ESP8266 development board
@@ -23,17 +34,6 @@ Hardware
 Recommended by [Adafruit NeoPixel "Best Practices"](https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices) to help protect LEDs from current onrush:
 * [1000µF Capacitor](http://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-1EM102/P5156-ND/245015)
 * [300 to 500 Ohm resistor](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/CF14JT470R/CF14JT470RCT-ND/1830342)
-
-Features
---------
-* Turn the LED-strip on and off
-* Adjust the brightness
-* Adjust the speed
-* Change the color pattern manually or randomly after selected period
-* Change the color palette manually or randomly after selected period
-* Layered effects: Glitter & Strobe
-* Sound reactive color patterns (possibility to use without microphone using generated signal)
-* Single solid color option
 
 Changes to original repo
 -------------------------
