@@ -20,7 +20,7 @@ Changes to original repo
 * User interface cleaned from all the excess
 * Code cleaned
 * All the patterns now use color pattern
-* Microphone support & sound reactive patterns added
+* Microphone support & sound reactive patterns added (https://github.com/atuline/FastLED-SoundReactive)
 * All but sound reactive patterns now react to speed change
 * A lot of new color patterns and palettes added
 * User interface translated to finnish
