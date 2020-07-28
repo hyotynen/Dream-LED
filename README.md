@@ -60,7 +60,7 @@ The app depends on the following libraries. They must either be downloaded from 
 * [FastLED](https://github.com/FastLED/FastLED)
 * [Arduino WebSockets](https://github.com/Links2004/arduinoWebSockets)
 
-Download the app code from GitHub using the green Clone or Download button from [the GitHub project main page](https://github.com/jasoncoon/esp8266-fastled-webserver) and click Download ZIP. Decompress the ZIP file in your Arduino sketch folder.
+Download the app code from GitHub using the green Clone or Download button from [the GitHub project main page](https://github.com/hyotynen/Dream-LED) and click Download ZIP. Decompress the ZIP file in your Arduino sketch folder.
 
 The web app needs to be uploaded to the ESP8266's SPIFFS.  You can do this within the Arduino IDE after installing the [Arduino ESP8266FS tool](http://esp8266.github.io/Arduino/versions/2.3.0/doc/filesystem.html#uploading-files-to-file-system).
 
