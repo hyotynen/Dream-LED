@@ -58,7 +58,6 @@ The app is installed via the Arduino IDE which can be [downloaded here](https://
 The app depends on the following libraries. They must either be downloaded from GitHub and placed in the Arduino 'libraries' folder, or installed as [described here](https://www.arduino.cc/en/Guide/Libraries) by using the Arduino library manager.
 
 * [FastLED](https://github.com/FastLED/FastLED)
-* [Arduino WebSockets](https://github.com/Links2004/arduinoWebSockets)
 
 Download the app code from GitHub using the green Clone or Download button from [the GitHub project main page](https://github.com/hyotynen/Dream-LED) and click Download ZIP. Decompress the ZIP file in your Arduino sketch folder.
 
