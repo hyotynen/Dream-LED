@@ -9,15 +9,15 @@ Features
 * Turn the LED-strip on and off
 * Adjust the brightness
 * Adjust the speed
-* Change the color pattern manually or randomly after selected period
-* Change the color palette manually or randomly after selected period
+* Change the color pattern manually or randomly after selected time period
+* Change the color palette manually or randomly after selected time period
 * Layered effects: Glitter & Strobe
 * Sound reactive color patterns (possibility to use without microphone using generated signal)
 * Single solid color option
 
 Changes to original repo
 -------------------------
-* User interface cleaned from all the excess
+* User interface cleaned from all the excess, using now only one single page
 * Code cleaned
 * All the patterns now use color pattern
 * Microphone support & sound reactive patterns added (https://github.com/atuline/FastLED-SoundReactive)
