@@ -97,23 +97,23 @@ String getSpeed() {
 
 // UI Fields
 FieldList fields = {
-  { "power", "Virta", BooleanFieldType, 0, 1, getPower },
-  { "brightness", "Kirkkaus", NumberFieldType, 1, 255, getBrightness },
-  { "speed", "Nopeus", NumberFieldType, 1, 255, getSpeed },
-  { "pattern", "Valokuvio", SectionFieldType },
-  { "pattern", "Valokuvio", SelectFieldType, 0, patternCount, getPattern, getPatterns },
-  { "autoplay", "Satunnainen", BooleanFieldType, 0, 1, getAutoplay },
-  { "autoplayDuration", "Vaihtonopeus", NumberFieldType, 0, 255, getAutoplayDuration },
-  { "palette", "Väripaletti", SectionFieldType },
-  { "palette", "Väripaletti", SelectFieldType, 0, paletteCount, getPalette, getPalettes },
-  { "autocolor", "Satunnainen", BooleanFieldType, 0, 1, getAutocolor },
-  { "autocolorDuration", "Vaihtonopeus", NumberFieldType, 0, 255, getAutocolorDuration },
+  { "power", "Power", BooleanFieldType, 0, 1, getPower },
+  { "brightness", "Brightness", NumberFieldType, 1, 255, getBrightness },
+  { "speed", "Speed", NumberFieldType, 1, 255, getSpeed },
+  { "pattern", "Pattern", SectionFieldType },
+  { "pattern", "Pattern", SelectFieldType, 0, patternCount, getPattern, getPatterns },
+  { "autoplay", "Random", BooleanFieldType, 0, 1, getAutoplay },
+  { "autoplayDuration", "Duration", NumberFieldType, 0, 255, getAutoplayDuration },
+  { "palette", "Palette", SectionFieldType },
+  { "palette", "Palette", SelectFieldType, 0, paletteCount, getPalette, getPalettes },
+  { "autocolor", "Random", BooleanFieldType, 0, 1, getAutocolor },
+  { "autocolorDuration", "Duration", NumberFieldType, 0, 255, getAutocolorDuration },
   { "glitter", "Glitter", SectionFieldType },
   { "glitter", "Glitter", BooleanFieldType, 0, 1, getGlitter },
-  { "strobe", "Strobo", BooleanFieldType, 0, 1, getStrobe },
-  { "microphone", "Mikrofoni", BooleanFieldType, 0, 1, getMicrophone },  
-  { "solidColor", "Yksittäinen väri", SectionFieldType },
-  { "solidColor", "Yksittäinen väri", ColorFieldType, 0, 255, getSolidColor },
+  { "strobe", "Strobe", BooleanFieldType, 0, 1, getStrobe },
+  { "microphone", "Microphone", BooleanFieldType, 0, 1, getMicrophone },  
+  { "solidColor", "Solid color", SectionFieldType },
+  { "solidColor", "Solid color", ColorFieldType, 0, 255, getSolidColor },
 };
 
 uint8_t fieldCount = ARRAY_SIZE(fields);

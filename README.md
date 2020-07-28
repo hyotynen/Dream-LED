@@ -42,7 +42,6 @@ Changes to original repo
 * Microphone support & sound reactive patterns added
 * All but sound reactive patterns now react to speed change
 * A lot of new color patterns and palettes added
-* User interface translated to finnish
 
 Web App
 --------

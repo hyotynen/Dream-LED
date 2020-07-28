@@ -24,7 +24,7 @@ ws.onmessage = function(evt) {
 }
 
 $(document).ready(function() {
-  $("#status").html("Yhdistetään, odota...");
+  $("#status").html("Connecting, please wait...");
 
   $.get(urlBase + "all", function(data) {
       $("#status").html("Ladataan, odota...");
@@ -403,15 +403,15 @@ function setBooleanFieldValue(field, btnOn, btnOff, value) {
 }
 
 function postValue(name, value) {
-  $("#status").html("Asetetaan " + name + ": " + value + ", odota...");
+  $("#status").html("Setting " + name + ": " + value + ", please wait...");
 
   var body = { name: name, value: value };
 
   $.post(urlBase + name + "?value=" + value, body, function(data) {
     if (data.name != null) {
-      $("#status").html("Aseta " + name + ": " + data.name);
+      $("#status").html("Set " + name + ": " + data.name);
     } else {
-      $("#status").html("Aseta " + name + ": " + data);
+      $("#status").html("Set " + name + ": " + data);
     }
   });
 }
@@ -424,12 +424,12 @@ function delayPostValue(name, value) {
 }
 
 function postColor(name, value) {
-  $("#status").html("Asetetaan " + name + ": " + value.r + "," + value.g + "," + value.b + ", odota...");
+  $("#status").html("Setting " + name + ": " + value.r + "," + value.g + "," + value.b + ", pleas wait...");
 
   var body = { name: name, r: value.r, g: value.g, b: value.b };
 
   $.post(urlBase + name + "?r=" + value.r + "&g=" + value.g + "&b=" + value.b, body, function(data) {
-    $("#status").html("Aseta " + name + ": " + data);
+    $("#status").html("Set " + name + ": " + data);
   })
   .fail(function(textStatus, errorThrown) { $("#status").html("Fail: " + textStatus + " " + errorThrown); });
 }

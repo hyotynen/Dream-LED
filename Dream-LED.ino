@@ -10,10 +10,8 @@
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program. If not, see <http://www.gnu.org/licenses/>.
+   GNU General Public License for more details. 
+   See <http://www.gnu.org/licenses/>.
 */
 
 #define FASTLED_INTERRUPT_RETRY_COUNT 0
@@ -77,7 +75,7 @@ unsigned long autoPlayTimeout = 0;
 uint8_t autocolorDuration = 10;
 unsigned long autocolorTimeout = 0;
 
-uint8_t gHue = 0; // rotating "base color" used by many of the patterns
+uint8_t gHue = 0; // rotating "base color" used by the patterns
 
 CRGB solidColor = CRGB::Blue;
 
@@ -110,39 +108,38 @@ typedef PatternAndName PatternAndNameList[];
 
 // List of patterns to cycle through.  Each is defined as a separate function below.
 PatternAndNameList patterns = {
-  { breathing,              "Hengitys" },
-  { confetti,               "Konfetti" },
-  { fire,                   "Liekit" },
-  { rainbow,                "Liukuväri" },
-  { rain,                   "Sade" },
-  { soundBlocks,            "Palikat" },
-  { juggle,                 "Pallottelu" },  
-  { bpm,                    "Rytmi" },
-  { rain,                   "Sade" },
+  { breathing,              "Breathing" },
+  { confetti,               "Confetti" },
+  { fire,                   "Fire" },
+  { rainbow,                "Gradient" },
+  { rain,                   "Rain" },
+  { soundBlocks,            "Blocks" },
+  { juggle,                 "Juggle" },  
+  { bpm,                    "BPM" },
   { sinelon,                "Sinelon" },
-  { discostrobe,            "Strobo" },
-  { heartBeat,              "Syke" },
-  { theaterChase,           "Teatteri" },
-  { shootingStar,           "Tähdenlento" },    
-  { rainbowSolid,           "Vaihtuva väri" },
-  { runningLights,          "Valojuoksu" },
-  { colorWaves,             "Väriaallot" },
-  { soundGradient,          "(Ääni) Kirkkaus" },  
-  { fillnoise,              "(Ääni) Kohina" },
-  { noisewide,              "(Ääni) Kohina 2" },
-  { confettiSound,          "(Ääni) Konfetti" },
-  { matrix,                 "(Ääni) Matrix" },
-  { myvumeter,              "(Ääni) Mittari" },
-  { pixelblend,             "(Ääni) Pikselit" },
-  { plasma,                 "(Ääni) Plasma" },
-  { plasma2,                "(Ääni) Plasma 2" },
-  { rainbowpeak,            "(Ääni) Salamointi" },
-  { onesine,                "(Ääni) Siniaallot" },
-  { firewide,               "(Ääni) Tuli" },
-  { jugglep,                "(Ääni) Temppuilu" },
-  { sinephase,              "(Ääni) Vaiheistus" },
-  { ripple,                 "(Ääni) Värähtely" },  
-  { showSolidColor,         "Yksittäinen väri" }    // This should be always last
+  { discostrobe,            "Strobe" },
+  { heartBeat,              "Heart beat" },
+  { theaterChase,           "Theater" },
+  { shootingStar,           "Shooting star" },    
+  { rainbowSolid,           "Changing solid" },
+  { runningLights,          "Running Lights" },
+  { colorWaves,             "Color waves" },
+  { soundGradient,          "(Sound) Brightness" },  
+  { fillnoise,              "(Sound) Noise" },
+  { noisewide,              "(Sound) Noise 2" },
+  { confettiSound,          "(Sound) Confetti" },
+  { matrix,                 "(Sound) Matrix" },
+  { myvumeter,              "(Sound) VU Meter" },
+  { pixelblend,             "(Sound) Pixels" },
+  { plasma,                 "(Sound) Plasma" },
+  { plasma2,                "(Sound) Plasma 2" },
+  { rainbowpeak,            "(Sound) Lightning" },
+  { onesine,                "(Sound) Sinewave" },
+  { firewide,               "(Sound) Fire" },
+  { jugglep,                "(Sound) Juggle" },
+  { sinephase,              "(Sound) Phase" },
+  { ripple,                 "(Sound) Ripple" },  
+  { showSolidColor,         "Solid Color" }    // This should be always last
 };
 
 const uint8_t patternCount = ARRAY_SIZE(patterns);
@@ -187,34 +184,34 @@ const CRGBPalette16 palettes[] = {
 
 const uint8_t paletteCount = ARRAY_SIZE(palettes);
 const String paletteNames[paletteCount] = {
-  "Auringonlasku",
-  "Auringonnousu",
-  "Aurinko",  
-  "Fuksia",
-  "Hento",
-  "Joulu",
-  "Joulukarkki",
-  "Juhla",
-  "Kolmiväri",
-  "Korkeus",
-  "Kuiva & kostea",
-  "Kuumuus",
-  "Laava",
-  "Lehto",
-  "Meri",
-  "Metsä",
-  "Mustavalko",
-  "Pastelli",
-  "Pilvi",
-  "Pinkki unelma",
-  "Purppurayö",
-  "Ramppi",
-  "Sateenkaaren raidat",
-  "Sateenkaari",
-  "Smaragdi",
-  "Sorbetti",  
-  "Suomi",
-  "Turkoosi",
+  "Sunset",
+  "Sunrise",
+  "Sun",  
+  "Fuschia",
+  "Subtle",
+  "Christmas",
+  "Christmas candy",
+  "Party",
+  "Tricolor",
+  "Elevation",
+  "Dry & wet",
+  "Heat",
+  "Lava",
+  "Grove",
+  "Ocean",
+  "Forest",
+  "Black & white",
+  "Pastel",
+  "Cloud",
+  "Pink splash",
+  "Purple",
+  "Ramp",
+  "Rainbow stripes",
+  "Rainbow",
+  "Emerald",
+  "Sherbet",  
+  "Blues",
+  "Turquoise",
   "Vintage"
 };
 
@@ -471,7 +468,7 @@ void loop() {
   }
 
   if (autoplay && (millis() > autoPlayTimeout)) {
-    if (microphone) setPattern(random(17, patternCount-1)); // pick random sound reactive pattern
+    if (microphone) setPattern(random(16, patternCount-1)); // pick random sound reactive pattern
     else setPattern(random(patternCount-1)); // pick random, but not solid color
     autoPlayTimeout = millis() + (autoplayDuration * 1000);
   }
