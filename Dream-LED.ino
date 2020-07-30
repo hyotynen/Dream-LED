@@ -119,7 +119,7 @@ PatternAndNameList patterns = {
   { heartBeat,              "Heart beat" },
   { juggle,                 "Juggle" },
   { rain,                   "Rain" },
-  { runningLights,          "Running Lights" },
+  { runningLights,          "Running lights" },
   { shootingStar,           "Shooting star" },
   { sinelon,                "Sinelon" },
   { discostrobe,            "Strobe" },
@@ -137,8 +137,8 @@ PatternAndNameList patterns = {
   { plasma,                 "(Sound) Plasma" },
   { plasma2,                "(Sound) Plasma 2" },
   { ripple,                 "(Sound) Ripple" },
-  { onesine,                "(Sound) Sinewave" },
-  { myvumeter,              "(Sound) VU Meter" },
+  { onesine,                "(Sound) Sine wave" },
+  { myvumeter,              "(Sound) VU meter" },
   { showSolidColor,         "Solid Color" }    // This should be last
 };
 
